@@ -93,6 +93,11 @@ export default {
     color: #000000;
     margin: 0 0 3.2rem 0;
     padding: 0;
+
+    @media (max-width: 767px) {
+      font-size: 2.6rem;
+      line-height: 2.8rem;
+    }
   }
 
   .breadcrumbs {
@@ -103,13 +108,21 @@ export default {
       display: flex;
       margin: 0;
       padding: 0;
+
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
     }
+  }
 
     &__item {
       font-style: normal;
       font-weight: normal;
       font-size: 1.6rem;
       line-height: 1.6rem;
+
+    @media (max-width: 767px) {
+      line-height: 2.6rem;
+    }
 
       a{
         color: #828282;
@@ -121,6 +134,14 @@ export default {
           content: "/";
           position: absolute;
           right: -1.2rem;
+
+        @media (max-width: 767px) {
+          top: 0rem;
+        }
+
+        @media (max-width: 767px) {
+          top: -0.35rem;
+          }
         }
       }
     }
